@@ -9,5 +9,3 @@ def bubble_sort(unsorted_list):
                 unsorted_list[j + 1] = temp
 
     return unsorted_list
-
-print(bubble_sort([5, 2, 1, 4, 3])) 
