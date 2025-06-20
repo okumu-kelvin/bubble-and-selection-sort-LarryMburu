@@ -4,4 +4,4 @@ def bubble_sort(unsorted_list):
         for j in range(0, n - i - 1):
             if unsorted_list[j] > unsorted_list[j + 1]:
                 unsorted_list[j], unsorted_list[j + 1] = unsorted_list[j + 1], unsorted_list[j]
-    print("Bubble Sort Result:", unsorted_list)
+    return unsorted_list
