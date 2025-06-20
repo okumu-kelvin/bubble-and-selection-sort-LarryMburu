@@ -1,10 +1,8 @@
-def selection_sort(arr):
-    for i in range(len(arr)):
-        # Assume the current index is the smallest
+def selection_sort(unsorted_list):
+    for i in range(len(unsorted_list)):
         min_idx = i
-        for j in range(i + 1, len(arr)):
-            if arr[j] < arr[min_idx]:
+        for j in range(i + 1, len(unsorted_list)):
+            if unsorted_list[j] < unsorted_list[min_idx]:
                 min_idx = j
-        # Swap the found minimum element with the first element
-        arr[i], arr[min_idx] = arr[min_idx], arr[i]
-    return arr
+        unsorted_list[i], unsorted_list[min_idx] = unsorted_list[min_idx], unsorted_list[i]
+    print("Selection Sort Result:", unsorted_list)
