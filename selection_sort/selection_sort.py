@@ -1,16 +1,15 @@
-def selection_sort(arr):
-    n = len(arr)
+def selection_sort(lst):
+    n = len(lst)  
 
     for i in range(n):
         min_index = i
 
         for j in range(i + 1, n):
-            if arr[j] < arr[min_index]:
-                min_index = j
-
+            if lst[j] < lst[min_index]:
+                min_index = j 
         if min_index != i:
-            temp = arr[i]
-            arr[i] = arr[min_index]
-            arr[min_index] = temp
+            temp = lst[i]
+            lst[i] = lst[min_index]
+            lst[min_index] = temp
 
-    return arr
+    return lst  
