@@ -5,4 +5,4 @@ def selection_sort(unsorted_list):
             if unsorted_list[j] < unsorted_list[min_idx]:
                 min_idx = j
         unsorted_list[i], unsorted_list[min_idx] = unsorted_list[min_idx], unsorted_list[i]
-    print("Selection Sort Result:", unsorted_list)
+    return unsorted_list
